@@ -8,44 +8,57 @@ function Nav() {
   const [links, setLinks] = useState([
     {
       id: "1",
-      page: "dashboard",
+      page: "",
+      pageName: "dashboard",
       icon: "fa-regular fa-chart-bar fa-fw",
       active: true,
     },
     {
-      id: "3",
+      id: "2",
       page: "settings",
+      pageName: "settings",
       icon: "fa-solid fa-gear fa-fw",
       active: false,
     },
     {
-      id: "2",
+      id: "3",
       page: "profile",
+      pageName: "profile",
       icon: "fa-regular fa-user fa-fw",
       active: false,
     },
     {
       id: "4",
       page: "projects",
+      pageName: "projects",
       icon: "fa-solid fa-diagram-project fa-fw",
       active: false,
     },
     {
-      id: "7",
+      id: "5",
       page: "courses",
+      pageName: "courses",
       icon: "fa-solid fa-graduation-cap fa-fw",
       active: false,
     },
     {
       id: "6",
       page: "friends",
+      pageName: "friends",
       icon: "fa-regular fa-circle-user fa-fw",
       active: false,
     },
-    { id: "5", page: "files", icon: "fa-regular fa-file fa-fw", active: false },
+    {
+      id: "7",
+      page: "files",
+      pageName: "files",
+      icon: "fa-regular fa-file fa-fw",
+      active: false,
+    },
     {
       id: "8",
       page: "plans",
+      pageName: "plans",
       icon: "fa-regular fa-credit-card fa-fw",
       active: false,
     },
@@ -82,7 +95,7 @@ function Nav() {
                 onClick={() => visit(link.id)}
               >
                 <i className={link.icon}></i>
-                <span>{link.page}</span>
+                <span>{link.pageName}</span>
               </Link>
             </li>
           );
