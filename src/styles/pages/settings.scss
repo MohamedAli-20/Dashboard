@@ -1,0 +1,258 @@
+@use "../library/variables.scss" as *;
+@use "../library/mixins.scss" as *;
+
+.settings-page{
+  @include grid-column(500px, 1fr, 20px);
+  margin: 20px;
+}
+@media(max-width: 768px){
+  .settings-page{
+      display: grid;
+      grid-template-columns: minmax(100px, 1fr);
+      gap: 10px;
+      margin: 10px;
+  }
+}
+/*-----widgets-s-----*/
+/*-----site-----*/
+.settings-page .site-s{
+  .option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    .info{
+      text-transform: capitalize;
+      p{
+        font-size: 13px;
+        color: $alt-fc;
+        margin: 5px 0 13px;
+      }
+    }
+    label{
+      @include toggle-btn(78px, 32px, 24px, 50px);
+    }
+  }
+  textarea{
+    width: 100%;
+    min-height: 150px;
+    font-size: 12px;
+    resize:none;
+    padding: 10px;
+    border: 1px solid $border-ccc;
+    border-radius: 6px;
+    text-transform: none;
+    &::placeholder{
+      text-transform: capitalize;
+    }
+  }
+}
+/*-----site-----*/
+/*-----general-----*/
+.settings-page .general-s .field{
+  font-size: 14px;
+  &:not(:last-of-type){
+    margin: 0 0 15px;
+  }
+  label{
+    display: block;
+    color: $alt-fc;
+    margin: 0 0 5px;
+  }
+  input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $border-ccc;
+    border-radius: 6px;
+    &::placeholder{
+      font-size: 13px;
+    }
+  }
+  form{
+    display: flex;
+    input{
+      width: calc(100% - 80px);
+      text-transform: lowercase;
+      margin-right: 15px;
+      cursor: no-drop;
+    }
+    button{
+      font-size: 16px;
+      color: $blue;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+/*-----general-----*/
+/*-----security-----*/
+.settings-page .security-s .sec-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding: 0 0 15px;
+  &:not(:last-of-type){
+    margin: 0 0 15px;
+    border-bottom: 1px solid $border-eee;
+  }
+  p{
+    color: $alt-fc;
+    font-size: 13px;
+    margin: 5px 0 13px;
+  }
+  label{
+    @include toggle-btn(78px, 32px, 24px, 50px);
+  }
+}
+/*-----security-----*/
+/*-----social-s-----*/
+.settings-page .social-s .username div{
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border: 1px solid $border-ddd;
+  border-radius: 6px;
+  &:not(:last-of-type){
+    margin: 0 0 15px;
+  }
+  i{
+    @include icon-box(40px, 40px, null, $alt-fc);
+    border-right: 1px solid $border-ddd;
+    transition: 0.3s;
+  }
+  input{
+    width: 100%;
+    font-size: 13px;
+    padding-left: 10px;
+    border: none;
+    background-color: transparent;
+  }
+  &:focus-within i{
+    color: black;
+  }
+}
+/*-----social-s-----*/
+/*-----widgets-control-----*/
+.widgets-control .check{
+  margin: 0 0 15px;
+  input{
+    display: none;
+  }
+  label{
+    padding-left: 30px;
+    cursor: pointer;
+    position: relative;
+    &::before,
+    &::after{
+      @include ele(14px, 14px, null);
+      margin-top: -9px;
+      border-radius: 4px;
+      top: 50%;
+      left: 0;
+      transition: 0.3s;
+    }
+    &::before{
+      border: 2px solid $grey;
+    }
+    &::after{
+      content: "\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: 12px;
+      color: $widget-bg;
+      background-color: $blue;
+      border: 2px solid $blue;
+      transform: scale(0);
+    }
+  }
+  input:checked + label::after{
+    transform: scale(1) rotate(360deg);
+  }
+}
+/*-----widgets-control-----*/
+/*-----backup-----*/
+.settings-page .backup-s{
+  .chosen{
+    margin-bottom: 15px;
+    div{
+      margin-bottom: 15px;
+      input{
+        display: none;
+      }
+      label{
+        padding-left: 30px;
+        cursor: pointer;
+        position: relative;
+        &::before{
+          content: "";
+          width: 18px;
+          height: 18px;
+          border: 2px solid $grey;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          transition: 0.3s;
+        }
+        &::after{
+          content: "";
+          width: 12px;
+          height: 12px;
+          background-color: $blue;
+          border-radius: 50%;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          transform: scale(0);
+          transition: 0.3s;
+        }
+      }
+      input:checked + label::before{
+        border-color: $blue;
+      }
+      input:checked + label::after{
+        transform: scale(1);
+      }
+    }
+  }
+  .servers{
+    display: flex;
+    gap: 15px;
+    padding: 20px 0 0;
+    border-top: 1px solid $border-eee;
+    input{
+      display: none;
+    }
+    div{
+      flex: 1;
+      margin-bottom: 15px;
+      border: 2px solid $border-eee;
+      border-radius: 10px;
+      label{
+        display: block;
+        text-align: center;
+        padding: 15px;
+        cursor: pointer;
+      }
+      label i{
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+    input:checked + .server{
+      border-color: $blue;
+    }
+    input:checked + .server label{
+      color: $blue;
+    }
+  }
+}
+@media (max-width: 768px){
+  .settings-page .backup .servers{
+      flex-flow: column wrap;
+  }
+}
+/*-----backup-----*/

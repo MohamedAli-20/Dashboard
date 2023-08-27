@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "name": "ahmed nasser",
+    "job": "javaScript developer",
+    "avatar": "friend-01.jpg",
+    "friendsCount": 99,
+    "projectsCount": 15,
+    "articlesCount": 25,
+    "joinDate": "02/10/2021",
+    "vip": true
+  },
+  {
+    "id": 2,
+    "name": "omar fathy",
+    "job": "cloud developer",
+    "avatar": "friend-02.jpg",
+    "friendsCount": 30,
+    "projectsCount": 11,
+    "articlesCount": 12,
+    "joinDate": "02/08/2020",
+    "vip": false
+  },
+  {
+    "id": 3,
+    "name": "omar ahmed",
+    "job": "mobile developer",
+    "avatar": "friend-03.jpg",
+    "friendsCount": 80,
+    "projectsCount": 20,
+    "articlesCount": 18,
+    "joinDate": "02/06/2020",
+    "vip": false
+  },
+  {
+    "id": 4,
+    "name": "shady nabil",
+    "job": "back-end developer",
+    "avatar": "friend-04.jpg",
+    "friendsCount": 70,
+    "projectsCount": 30,
+    "articlesCount": 18,
+    "joinDate": "28/06/2020",
+    "vip": false
+  },
+  {
+    "id": 5,
+    "name": "mohamed ibrahim",
+    "job": "algorithm developer",
+    "avatar": "friend-05.jpg",
+    "friendsCount": 80,
+    "projectsCount": 30,
+    "articlesCount": 18,
+    "joinDate": "28/08/2020",
+    "vip": false
+  },
+  {
+    "id": 6,
+    "name": "shady nabil",
+    "job": "back-end developer",
+    "avatar": "friend-04.jpg",
+    "friendsCount": 70,
+    "projectsCount": 30,
+    "articlesCount": 18,
+    "joinDate": "28/06/2020",
+    "vip": false
+  },
+  {
+    "id": 7,
+    "name": "omar fathy",
+    "job": "cloud developer",
+    "avatar": "friend-02.jpg",
+    "friendsCount": 30,
+    "projectsCount": 11,
+    "articlesCount": 12,
+    "joinDate": "02/08/2020",
+    "vip": true
+  },
+  {
+    "id": 8,
+    "name": "mohamed ibrahim",
+    "job": "algorithm developer",
+    "avatar": "friend-05.jpg",
+    "friendsCount": 80,
+    "projectsCount": 30,
+    "articlesCount": 18,
+    "joinDate": "28/08/2020",
+    "vip": false
+  },
+  {
+    "id": 9,
+    "name": "ahmed nasser",
+    "job": "javaScript developer",
+    "avatar": "friend-01.jpg",
+    "friendsCount": 99,
+    "projectsCount": 15,
+    "articlesCount": 25,
+    "joinDate": "02/10/2021",
+    "vip": true
+  },
+  {
+    "id": 10,
+    "name": "omar ahmed",
+    "job": "mobile developer",
+    "avatar": "friend-03.jpg",
+    "friendsCount": 80,
+    "projectsCount": 20,
+    "articlesCount": 18,
+    "joinDate": "02/06/2020",
+    "vip": false
+  }
+]

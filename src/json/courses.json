@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "courseName": "mastering web deign",
+    "avatar": "team-01.png",
+    "courseImg": "course-01.jpg",
+    "about": "master the art of web designing and mocking, prototyping and creating web design archtiecture",
+    "price": 950,
+    "learnersCount": 165
+  },
+  {
+    "id": 2,
+    "courseName": "data structure and algorithems",
+    "avatar": "team-02.png",
+    "courseImg": "course-02.jpg",
+    "about": "master the art of data structure and famous algorithems like sorting, dividing and conquering",
+    "price": 1150,
+    "learnersCount": 210
+  },
+  {
+    "id": 3,
+    "courseName": "responsive web design",
+    "avatar": "team-03.png",
+    "courseImg": "course-03.jpg",
+    "about": "mastering responsive web design and media queries and know everything about breakpoints",
+    "price": 650,
+    "learnersCount": 90
+  },
+  {
+    "id": 4,
+    "courseName": "mastering python",
+    "avatar": "team-04.png",
+    "courseImg": "course-04.jpg",
+    "about": "PHP tutorials and examples and practice on web application and connecting with databases",
+    "price": 850,
+    "learnersCount": 150
+  },
+  {
+    "id": 5,
+    "courseName": "PHP examples",
+    "avatar": "team-05.png",
+    "courseImg": "course-05.jpg",
+    "about": "matering python to prepare for data science and AI and automating things in your life",
+    "price": 950,
+    "learnersCount": 250
+  },
+  {
+    "id": 6,
+    "courseName": "data structure and algorithems",
+    "avatar": "team-02.png",
+    "courseImg": "course-02.jpg",
+    "about": "master the art of data structure and famous algorithems like sorting, dividing and conquering",
+    "price": 1150,
+    "learnersCount": 210
+  },
+  {
+    "id": 7,
+    "courseName": "responsive web design",
+    "avatar": "team-03.png",
+    "courseImg": "course-03.jpg",
+    "about": "mastering responsive web design and media queries and know everything about breakpoints",
+    "price": 650,
+    "learnersCount": 90
+  },
+  {
+    "id": 8,
+    "courseName": "mastering web deign",
+    "avatar": "team-01.png",
+    "courseImg": "course-01.jpg",
+    "about": "master the art of web designing and mocking prototyping and creating web design archtiecture",
+    "price": 950,
+    "learnersCount": 165
+  },
+  {
+    "id": 9,
+    "courseName": "mastering python",
+    "avatar": "team-05.png",
+    "courseImg": "course-05.jpg",
+    "about": "PHP tutorials and examples and practice on web application and connecting with databases",
+    "price": 850,
+    "learnersCount": 150
+  },
+  {
+    "id": 10,
+    "courseName": "PHP examples",
+    "avatar": "team-04.png",
+    "courseImg": "course-04.jpg",
+    "about": "matering python to prepare for data science and AI and automating things in your life",
+    "price": 950,
+    "learnersCount": 25
+  }
+]

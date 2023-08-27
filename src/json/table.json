@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "ministry wikipidea",
+    "date": "10 may 2022",
+    "client": "ministry",
+    "price": 5300,
+    "team": ["team-01", "team-02", "team-03", "team-04"],
+    "status": { "name": "pending", "btn": "btn-orange" }
+  },
+  {
+    "id": 2,
+    "name": "elzero shop",
+    "date": "12 oct 2021",
+    "client": "elzero company",
+    "price": 1500,
+    "team": ["team-01", "team-02", "team-03"],
+    "status": { "name": "in progress", "btn": "btn-blue" }
+  },
+  {
+    "id": 3,
+    "name": "bouba app",
+    "date": "05 sep 2021",
+    "client": "bouba",
+    "price": 800,
+    "team": ["team-01", "team-02"],
+    "status": { "name": "completed", "btn": "btn-green" }
+  },
+  {
+    "id": 4,
+    "name": "mahmoud website",
+    "date": "22 may 2021",
+    "client": "mahmoud",
+    "price": 600,
+    "team": ["team-01", "team-02"],
+    "status": { "name": "completed", "btn": "btn-green" }
+  },
+  {
+    "id": 5,
+    "name": "sayed website",
+    "date": "24 may 2021",
+    "client": "sayed",
+    "price": 300,
+    "team": ["team-01", "team-02"],
+    "status": { "name": "rejected", "btn": "btn-red" }
+  },
+  {
+    "id": 6,
+    "name": "arena application",
+    "date": "01 mar 2021",
+    "client": "arena company",
+    "price": 2600,
+    "team": ["team-01", "team-02", "team-03", "team-04"],
+    "status": { "name": "completed", "btn": "btn-green" }
+  }
+]

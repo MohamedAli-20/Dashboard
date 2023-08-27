@@ -1,0 +1,65 @@
+@use './library/variables.scss' as *;
+@use './library/mixins.scss' as *;
+
+// import open sans font:
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+// global >> scrollbar >> page
+// global:
+*{
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: $body-bg;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+button{
+  border: none;
+}
+input, textarea{
+  outline: none;
+  cursor: pointer;
+}
+ul{
+  list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, p, input, label{
+  text-transform: capitalize;
+}
+input:disabled{
+  color: #bbb;
+  background-color: #f0f4f8;
+}
+
+// scrollbar
+::-webkit-scrollbar{
+  width: 15px;
+  background-color: $widget-bg;
+}
+::-webkit-scrollbar-thumb{
+  background-color: $blue;
+  &:hover{
+    background-color: $blue-alt;
+  }
+}
+// page:
+.page{
+  display: flex;
+  min-height: 100vh;
+}
+// content:
+.page .content{
+  width: 100%;
+  overflow: hidden;
+  margin-left: 225px;
+}
+@media(max-width: 768px){
+  .page .content{
+      margin-left: 58px;
+  }
+}

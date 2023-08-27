@@ -1,0 +1,15 @@
+@use './variables.scss' as *;
+
+@keyframes change-color {
+  0%{
+      background-color:  $widget-bg;
+  }
+  100%{
+      background-color: $blue;
+  }
+}
+@keyframes go-up {
+  100% {
+    transform: translateY(-5px);
+  }
+}

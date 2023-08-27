@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "record one new video",
+    "content": "record python create exe project",
+    "done": false
+  },
+  {
+    "id": 2,
+    "title": "write article",
+    "content": "write low level vs high level languages",
+    "done": false
+  },
+  {
+    "id": 3,
+    "title": "finish project",
+    "content": "puplish academy programming project",
+    "done": false
+  },
+  {
+    "id": 4,
+    "title": "attend the meeting",
+    "content": "attend the project business analysis meeting",
+    "done": false
+  },
+  {
+    "id": 5,
+    "title": "finish lesson",
+    "content": "finish teaching flex box",
+    "done": false
+  }
+]

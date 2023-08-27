@@ -1,0 +1,153 @@
+@use "../library/variables.scss" as *;
+@use "../library/mixins.scss" as *;
+
+// map:
+// 1- nav, 2- header, 3- title:
+
+// -----> [1] nav <-----
+nav {
+  width: 225px;
+  height: 100%;
+  background-color: $widget-bg;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 10px #ddd;
+  position: fixed;
+  z-index: 100;
+  h3 {
+    text-transform: capitalize;
+    margin: 0 0 50px;
+    position: relative;
+    &::before {
+      @include ele(80px, 2px, $main-fc);
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::after {
+      @include ele-circle(12px, $main-fc);
+      border: 3px solid $widget-bg;
+      bottom: -28px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  ul li a {
+    color: $main-fc;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    transition: 0.3s;
+    i {
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    span {
+      font-size: 14px;
+    }
+    &:hover {
+      background-color: #f6f6f6;
+    }
+  }
+  .active {
+    background-color: #f6f6f6;
+  }
+}
+@media (max-width: 767px) {
+  nav {
+    width: fit-content;
+    padding: 10px;
+    h3 {
+      font-size: 13px;
+      margin-bottom: 15px;
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+    ul li a {
+      padding: 10px;
+      i {
+        margin: 0;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}
+// -----> [1] header <-----
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $widget-bg;
+  padding: 15px;
+  .search {
+    position: relative;
+    &::before {
+      font-family: var(--fa-style-family-classic);
+      content: "\f002";
+      font-size: 14px;
+      font-weight: bold;
+      color: $alt-fc;
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+    }
+    input {
+      width: 160px;
+      padding: 10px;
+      padding-left: 30px;
+      margin-left: 5px;
+      border: 1px solid $border-ccc;
+      border-radius: 10px;
+      transition: 0.3s;
+      &::placeholder {
+        font-size: 13px;
+      }
+      &:focus {
+        width: 200px;
+      }
+      &:focus::placeholder {
+        opacity: 0;
+      }
+    }
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    .notifications {
+      position: relative;
+      &::before {
+        @include ele-circle(10px, $red);
+        top: -5px;
+        right: -5px;
+      }
+    }
+    img {
+      width: 32px;
+      margin-left: 15px;
+      border-radius: 50%;
+    }
+  }
+}
+// -----> [1] title <-----
+.page .content > h1 {
+  margin: 20px 20px 40px;
+  position: relative;
+  &::before {
+    @include ele(120px, 3px, $widget-bg);
+    bottom: -10px;
+    left: 0px;
+  }
+  &::after {
+    @include ele(40px, 3px, $main-fc);
+    bottom: -10px;
+    left: 0px;
+  }
+}

@@ -1,0 +1,165 @@
+@use './variables.scss' as *;
+
+@mixin ele($width, $height, $bg){
+  content: "";
+  width: #{$width};
+  height: #{$height};
+  background-color: #{$bg};
+  position: absolute;
+}
+
+
+@mixin ele-circle($dimensions, $bg){
+  content: "";
+  width: #{$dimensions};
+  height: #{$dimensions};
+  background-color: $bg;
+  border-radius: 50%;
+  position: absolute;
+}
+@mixin circle($dimensions, $bg){
+  width: #{$dimensions};
+  height: #{$dimensions};
+  background-color: $bg;
+  border-radius: 50%;
+}
+@mixin outline-circle($dimensions, $bg, $round, $outline){
+  content: "";
+  width: #{$dimensions};
+  height: #{$dimensions};
+  background-color: $bg;
+  border-radius: 50%;
+  border: $round solid $bg;
+  border-radius: 50%;
+  outline: $round solid $outline;
+  position: absolute;
+}
+
+@mixin grid-column($s-size, $l-size, $gap){
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(#{$s-size}, #{$l-size}));
+  gap: #{$gap};
+}
+@mixin grid-row($s-size, $l-size, $gap){
+  display: grid;
+  grid-template-row: repeat(auto-fill, minmax(#{$s-size}, #{$l-size}));
+  gap: #{$gap};
+}
+
+@mixin ele-load($width, $height, $bg, $progress, $progress-bg){
+  width: $width;
+  height: $height;
+  background: $bg;
+  position: relative;
+  &::before{
+    content: "";
+    width: $progress;
+    height: 100%;
+    background-color: $progress-bg;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@mixin load($width, $height, $bg, $progress, $progress-bg){
+  width: $width;
+  height: $height;
+  background: $bg;
+  position: relative;
+  div{
+    width: $progress;
+    height: 100%;
+    background-color: $progress-bg;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@mixin d-tracker($color, $fc, $bg, $arrow){
+  color: $color;
+  font-size: $fc;
+  background-color: $bg;
+  padding: 2px 5px;
+  border-radius: 6px;
+  border: none;
+  position: absolute;
+  bottom: 16px;
+  transform: translatex(50%);
+  &::before{
+    content: "";
+    border: $arrow solid transparent;
+    border-top-color: $bg;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
+
+@mixin icon-inbox($width, $height, $bg, $color){
+  width: $width;
+  height: $height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg;
+  i{
+    color: $color;
+  }
+}
+@mixin icon-box($width, $height, $bg, $color){
+  width: $width;
+  height: $height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg;
+  color: $color;
+}
+
+@mixin icon-circle($dimensions, $bg, $color){
+  width: $dimensions;
+  height: $dimensions;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color;
+  background-color: $bg;
+  border-radius: 50%;
+}
+
+@mixin toggle-btn($width, $height, $ball, $move) {
+  .toggle-check{
+    display: none;
+    appearance: none;
+    &:checked + .toggle-switch {
+      background-color: $blue;
+    }
+    &:checked + .toggle-switch:before {
+      content: "\f00c";
+      color: $blue;
+      left: $move;
+    }
+  }
+  .toggle-switch {
+    width: $width;
+    height: $height;
+    background-color: #ccc;
+    border-radius: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s;
+  }
+  .toggle-switch:before {
+    content: "\f00d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    @include icon-circle($ball, $widget-bg, #aaa);
+    transition: 0.3s;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+  }
+}

@@ -1,0 +1,14 @@
+@use './library/mixins.scss' as *;
+@use './library/variables.scss' as *;
+
+// widget-txt:
+.widget-txt .txt{
+  margin-bottom: 20px;
+  h2{
+  margin: 0 0 10px;
+  }
+  p{
+  font-size: 15px;
+  color: $alt-fc;
+  }
+}

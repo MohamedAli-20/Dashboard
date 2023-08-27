@@ -1,0 +1,83 @@
+[
+  {
+    "id": "project-01",
+    "name": "elzero dashboard",
+    "team": ["team-01","team-02","team-03","team-04","team-05"],
+    "skills": ["programming", "design", "hosting", "marketing"],
+    "progress": 50,
+    "date": "15/10/2021",
+    "price": 2500
+  },
+  {
+    "id": "project-02",
+    "name": "academy portal",
+    "team": ["team-01","team-02","team-03"],
+    "skills": ["programming", "design"],
+    "progress": 80,
+    "date": "15/10/2021",
+    "price": 1800
+  },
+  {
+    "id": "project-03",
+    "name": "chatting application",
+    "team": ["team-01","team-02","team-03"],
+    "skills": ["design"],
+    "progress": 100,
+    "date": "15/10/2021",
+    "price": 950
+  },
+  {
+    "id": "project-04",
+    "name": "ahmed dashboard",
+    "team": ["team-01","team-02","team-03","team-04"],
+    "skills": ["programming", "design", "hosting", "marketing"],
+    "progress": 60,
+    "date": "15/10/2021",
+    "price": 1700
+  },
+  {
+    "id": "project-05",
+    "name": "ahmed portal",
+    "team": ["team-01","team-02","team-03"],
+    "skills": ["programming", "design"],
+    "progress": 70,
+    "date": "15/10/2021",
+    "price": 850
+  },
+  {
+    "id": "project-06",
+    "name": "mohamed application",
+    "team": ["team-01","team-02","team-03"],
+    "skills": ["design"],
+    "progress": 40,
+    "date": "15/10/2021",
+    "price": 950
+  },
+  {
+    "id": "project-07",
+    "name": "mohamed dashboard",
+    "team": ["team-01","team-02","team-03","team-04"],
+    "skills": ["programming", "design", "hosting", "marketing"],
+    "progress": 60,
+    "date": "15/10/2021",
+    "price": 1950
+  },
+  {
+    "id": "project-08",
+    "name": "mohamed portal",
+    "team": ["team-01","team-02","team-03"],
+    "skills": ["programming", "design"],
+    "progress": 60,
+    "date": "15/10/2021",
+    "price": 1650
+  },
+  {
+    "id": "project-09",
+    "name": "ahmed application",
+    "team": ["team-01","team-02","team-03"],
+    "skills": ["design"],
+    "progress": 90,
+    "date": "15/10/2021",
+    "price": 950
+  }
+]

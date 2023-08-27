@@ -1,0 +1,5 @@
+1. make onload window change nav links
+2. make components in pages
+3. make mixins for all check
+4. dark mode
+5. add page class with media
