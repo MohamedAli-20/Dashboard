@@ -8,7 +8,7 @@ function Nav() {
   const [links, setLinks] = useState([
     {
       id: "1",
-      page: "",
+      page: "Dashoard",
       pageName: "dashboard",
       icon: "fa-regular fa-chart-bar fa-fw",
       active: true,
