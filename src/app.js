@@ -33,7 +33,7 @@ function App() {
             <Route path="/Dashboard/files" element={<Files />}></Route>
             <Route path="/Dashboard/friends" element={<Friends />}></Route>
             <Route path="/Dashboard/courses" element={<Courses />}></Route>
-            <Route path="/Dashoard/plans" element={<Plans />}></Route>
+            <Route path="/Dashboard/plans" element={<Plans />}></Route>
           </Routes>
         </div>
       </div>
