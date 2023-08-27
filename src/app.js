@@ -27,13 +27,13 @@ function App() {
         <Header />
           <Routes>
             <Route path="/" index element={<Dashboard />}></Route>
-            <Route path="/profile" element={<Profile />}></Route>
-            <Route path="/settings" element={<Settings />}></Route>
-            <Route path="/projects" element={<Projects />}></Route>
-            <Route path="/files" element={<Files />}></Route>
-            <Route path="/friends" element={<Friends />}></Route>
-            <Route path="/courses" element={<Courses />}></Route>
-            <Route path="/plans" element={<Plans />}></Route>
+            <Route path="/Dashboard/profile" element={<Profile />}></Route>
+            <Route path="/Dashboard/settings" element={<Settings />}></Route>
+            <Route path="/Dashboard/projects" element={<Projects />}></Route>
+            <Route path="/Dashboard/files" element={<Files />}></Route>
+            <Route path="/Dashboard/friends" element={<Friends />}></Route>
+            <Route path="/Dashboard/courses" element={<Courses />}></Route>
+            <Route path="/Dashoard/plans" element={<Plans />}></Route>
           </Routes>
         </div>
       </div>
