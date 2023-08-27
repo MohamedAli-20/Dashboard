@@ -26,7 +26,7 @@ function App() {
         <div className="content">
         <Header />
           <Routes>
-            <Route path="/" index element={<Dashboard />}></Route>
+            <Route path="/dashboard" index element={<Dashboard />}></Route>
             <Route path="/Dashboard/profile" element={<Profile />}></Route>
             <Route path="/Dashboard/settings" element={<Settings />}></Route>
             <Route path="/Dashboard/projects" element={<Projects />}></Route>
